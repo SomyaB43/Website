@@ -1,279 +1,63 @@
-/* --- 0. Variables and Global Reset --- */
-:root {
-    --primary-text-color: #2c2c2c;
-    --hero-bg-color: #ffffff; /* White background for the illustration area */
-    --about-bg-color: #f7f7f7; /* Light grey background for About Me */
-    --work-bg-color: #e9e9e9; /* Light grey background for My Work */
-    --navbar-bg-color: #ffffff;
-    --button-bg-color: #ffffff;
-    --button-border-color: #2c2c2c;
-    --section-padding: 80px 60px;
-}
-
+/* Remove default spacing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--primary-text-color);
-    background-color: #333333; /* Darker outside frame color */
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
 }
 
-/* Wrapper for the main content to simulate the screen frame */
-.macbook-frame {
-    width: 900px; 
-    max-width: 100%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+/* Hero section styling */
+.hero {
+  height: 100vh;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
 }
 
-/* --- 1. Header/Navigation Bar --- */
-header {
-    width: 100%;
-    background-color: var(--navbar-bg-color);
-    padding: 15px 40px;
-    border-bottom: 1px solid #ddd;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 30px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--primary-text-color);
-    font-weight: 400;
-    font-size: 0.9rem;
-    transition: color 0.2s;
-}
-.nav-links a:hover {
-    color: #555;
-}
-
-/* --- 2. Hero Section --- */
-.hero-section {
-    background-color: var(--hero-bg-color);
-    background-image: url('me.png'); /* Add this line */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 70vh;
-    padding: 60px 80px;
-    position: relative; 
-    overflow: hidden; 
-}
-
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.5); /* Adjust opacity here (0.1 - 0.6) */
-    z-index: 0;
-}
-
-/* Illustration Placeholder */
-.hero-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* CHANGE THIS PATH: Replace 'illustration.png' with your actual image path */ 
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    z-index: 1; 
-}
-
-.hero-content {
-    position: relative; 
-    z-index: 2; 
-    max-width: 550px; 
-    padding-top: 50px; 
-}
-
+/* Content styles */
 .hero-content h1 {
-    font-size: 2.5rem; /* Slightly reduced size for better fit */
-    font-weight: 900; 
-    line-height: 1.1;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #000000;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-content h1 span {
+  color: #ffdf70; /* highlight color */
 }
 
-.hero-content p {
-    font-size: 1.05rem;
-    margin-bottom: 40px;
-    color: #222; 
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-/* Button Styling */
-.button-primary {
-    display: inline-block;
-    padding: 12px 30px;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: var(--primary-text-color);
-    background-color: var(--button-bg-color);
-    border: 2px solid var(--button-border-color);
-    border-radius: 30px; 
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: background-color 0.3s;
+.description {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.button-primary:hover {
-    background-color: #f0f0f0;
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: 0.3s ease;
 }
 
-/* --- 3. About Me Section --- */
-.about-me-section {
-    background-color: var(--about-bg-color);
-    padding: var(--section-padding);
-    text-align: center;
-}
-
-.about-me-section h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-
-.about-content {
-    max-width: 800px;
-    margin: 0 auto 50px auto;
-    font-size: 1rem;
-    color: #555;
-}
-
-.about-content p {
-    margin-bottom: 15px;
-}
-
-.about-content strong {
-    color: var(--primary-text-color);
-}
-
-/* --- 4. My Work Section (Projects) --- */
-.my-work-section {
-    background-color: var(--work-bg-color);
-    padding: var(--section-padding);
-    text-align: center;
-}
-
-.my-work-section h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-
-.projects-grid {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.project-card {
-    text-decoration: none;
-    color: var(--primary-text-color);
-    width: 300px; /* Fixed width for the cards */
-    height: 300px; /* Fixed height for the cards */
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Align content to the bottom of the card */
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
-}
-
-.card-content {
-    background-color: rgba(255, 255, 255, 0.8); /* Slight overlay for readability */
-    padding: 10px 0;
-}
-
-.card-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
-.card-content p {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-/* Background images for specific cards (to match the design's unique look) */
-.project-card.automated {
-    /* Replace with the background image/graphic for Automate Solutions */
-    background-image: url("AutomateLogo.png"); 
-    background-size: cover;
-    background-position: center;
-}
-
-.project-card.empowered {
-    /* Replace with the background image/graphic for Empowered Initiatives */
-    background-image: url('EmpowHer.png'); 
-    background-size: cover;
-    background-position: center;
-}
-
-/* --- 5. Contact Section --- */
-.my-contact-page {
-    background-color: #ffffff; /* White background to match hero or navbar */
-    padding: var(--section-padding);
-    text-align: center;
-    border-top: 1px solid #ddd;
-}
-
-.my-contact-page h3 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    color: var(--primary-text-color);
-    margin-bottom: 30px;
-}
-
-.my-contact-page h2 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #555;
-    margin-bottom: 15px;
-    word-break: break-word;
+.btn:hover {
+  background-color: rgba(0,0,0,0.8);
 }
