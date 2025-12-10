@@ -1,0 +1,92 @@
+/* Reset / base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
+  padding: 0 1rem;
+}
+header nav {
+  margin: 1rem 0;
+  text-align: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Intro / heading */
+.about-page .intro {
+  text-align: center;
+  padding: 2rem 0;
+}
+.about-page .intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.about-page .intro h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  color: #555;
+}
+.about-page .intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* About content (image + text) */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  flex-wrap: wrap;
+}
+.about-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.about-text {
+  max-width: 600px;
+}
+
+/* Extra / hobbies section */
+.extra {
+  padding: 2rem 0;
+  text-align: center;
+}
+.extra h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.extra ul {
+  list-style-type: none;
+}
+.extra ul li {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #777;
+}
