@@ -169,3 +169,23 @@ nav a:hover {
   transform:translateY(-4px);
 }
 
+/* Highlight Image Layout */
+.highlight-images{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+
+.highlight-images img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  transition:0.3s ease;
+}
+
+.highlight-images img:hover{
+  transform:translateY(-4px);
+}
+
+
