@@ -1,4 +1,4 @@
-/* Reset default spacing */
+/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -7,125 +7,179 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #0f0f0f;
-  color: white;
+  background: #fdfbff; /* bright soft white */
+  color: #1a1a1a;
+  line-height: 1.7;
 }
 
-/* Hero section */
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* ===== Navigation ===== */
+nav {
   text-align: center;
-  background: url("background.jpg") center/cover no-repeat;
-  overflow: hidden;
+  padding: 1.5rem 0;
 }
 
-/* Dark overlay for better readability */
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 1;
-}
-
-/* Hero content */
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-  padding: 0 20px;
-  animation: fadeInUp 1s ease-out forwards;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  line-height: 1.2;
-}
-
-.hero-content h1 span {
-  color: #ffdf70; /* highlight color */
-  text-shadow: 0 0 10px rgba(255,223,112,0.7);
-}
-
-.subtitle {
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
-.description {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  color: #f0f0f0;
-}
-
-/* Button group */
-.btn-group {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Buttons */
-.btn {
-  padding: 12px 28px;
-  border-radius: 6px;
+nav a {
+  margin: 0 20px;
   text-decoration: none;
-  font-size: 1rem;
+  color: #7c5ac9; /* soft lilac */
   font-weight: 500;
-  transition: all 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
-  backdrop-filter: blur(5px);
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
 }
 
-.btn:hover {
-  background-color: rgba(255, 223, 112, 0.9);
-  color: #0f0f0f;
+nav a:hover {
+  color: #5a3ea0; /* deeper lilac hover */
+}
+
+/* ===== HERO SECTION ===== */
+.case-hero {
+  text-align: center;
+  padding: 5rem 1rem 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.case-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #7c5ac9;
+}
+
+.case-hero p {
+  max-width: 650px;
+  margin: 0 auto 1.8rem auto;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* Tags */
+.hero-tags span {
+  display: inline-block;
+  background: #f3edff; /* soft lilac bubble */
+  color: #7c5ac9;
+  padding: 6px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid #d4c6f2;
+  transition: 0.3s ease;
+}
+
+.hero-tags span:hover {
+  background: #e1d7ff; /* slightly darker lilac */
+}
+
+/* ===== Section Wrapper ===== */
+.case-section {
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Alternating background */
+.alt-bg {
+  background: #ffffff; /* clean white section */
+}
+
+/* Divider */
+.divider {
+  border: none;
+  height: 1px;
+  background: #dcd6e8; /* soft lilac divider */
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* ===== Headings ===== */
+.case-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #7c5ac9;
+}
+
+.case-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: #5a3ea0;
+}
+
+/* ===== Cards ===== */
+.highlight-box,
+.solution-card {
+  background: #ffffff; /* clean white cards */
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(124, 90, 201, 0.15); /* soft lilac shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 1.8rem;
+}
+
+.highlight-box:hover,
+.solution-card:hover {
   transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(124, 90, 201, 0.2);
 }
 
-.btn-secondary {
-  background-color: rgba(255, 255, 255, 0.2);
+/* ===== Text Styling ===== */
+.case-section p {
+  color: #555;
+  margin-bottom: 1rem;
 }
 
-.btn-secondary:hover {
-  background-color: rgba(255, 223, 112, 0.8);
-  color: #0f0f0f;
+/* ===== Figma CTA ===== */
+.figma-cta {
+  text-align: center;
+  margin-top: 3rem;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.prototype-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #7c5ac9; /* lilac button */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease, transform 0.2s ease;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.4rem;
-  }
+.prototype-btn:hover {
+  background: #5a3ea0; /* deeper lilac hover */
+  transform: translateY(-2px);
+}
 
-  .subtitle {
-    font-size: 1.2rem;
-  }
+/* ===== Solution Cards Layout for Goals, Problem, UX Approach ===== */
+.case-section .solution-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
 
-  .description {
-    font-size: 1rem;
-  }
+/* Solution Card Styling */
+.case-section .solution-card {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(124, 90, 201, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.case-section .solution-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(124, 90, 201, 0.2);
+}
+
+.case-section .solution-card h3 {
+  font-size: 1.05rem;
+  margin: 0;
+  font-weight: 500;
+  color: #7c5ac9;
 }
