@@ -1,0 +1,102 @@
+/* Case Study Specific Styles */
+
+/* HERO */
+.case-hero{
+  text-align:center;
+  padding:3rem 1rem;
+  background:#f0f0f0;
+}
+
+.case-hero h1{
+  font-size:2.5rem;
+  margin-bottom:0.5rem;
+}
+
+.case-hero .subtitle{
+  color:#555;
+  margin-bottom:1rem;
+}
+
+.hero-tags span{
+  display:inline-block;
+  margin:0 0.5rem;
+  font-size:0.9rem;
+  color:#888;
+}
+
+/* CASE SECTIONS */
+.case-section{
+  padding:2.5rem 1rem;
+}
+
+.case-section h2{
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+
+.case-section.alt-bg{
+  background:#f9f9f9;
+}
+
+/* HIGHLIGHT BOX */
+.highlight-box{
+  background:white;
+  padding:1.5rem;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom:2rem;
+}
+
+.highlight-box ul{
+  list-style: disc;
+  margin-left:1.5rem;
+  color:#444;
+}
+
+/* SOLUTION CARDS */
+.solution-card{
+  background:white;
+  padding:1.5rem;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+  margin-bottom:1.5rem;
+}
+
+.solution-card h3{
+  margin-bottom:0.5rem;
+  font-size:1.3rem;
+}
+
+/* FIGMA CTA */
+.figma-cta{
+  text-align:center;
+  padding:2rem 0;
+}
+
+.figma-cta p{
+  margin:1rem 0 2rem 0;
+  color:#555;
+}
+
+.prototype-btn{
+  display:inline-block;
+  padding:12px 24px;
+  background:black;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:500;
+  transition:0.3s ease;
+}
+
+.prototype-btn:hover{
+  background:#333;
+  transform:translateY(-2px);
+}
+
+/* DIVIDER */
+.divider{
+  border:0;
+  border-top:1px solid #e0e0e0;
+  margin:2rem 0;
+}
