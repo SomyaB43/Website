@@ -5,60 +5,53 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f6f8;
+  color: #1a1a1a;
+  line-height: 1.7;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-header {
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
+/* ===== Navigation ===== */
 nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
+  padding: 1.5rem 0;
 }
 
 nav a {
-  margin: 0.5rem 1rem;
+  margin: 0 20px;
   text-decoration: none;
   color: #333;
-  font-weight: 600;
-  transition: color 0.3s;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
 }
 
 nav a:hover {
-  color: #007BFF;
+  color: black;
 }
 
+/* ===== HERO SECTION ===== */
 .case-hero {
+  text-align: center;
+  padding: 5rem 1rem 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: #fff;
-  padding: 6rem 2rem 4rem;
+  border-radius: 12px;
 }
 
 .case-hero h1 {
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: 2.6rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.case-hero .subtitle {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  margin-bottom: 1.5rem;
+.case-hero p {
+  max-width: 650px;
+  margin: 0 auto 1.8rem auto;
+  color: #f0f0f0;
+  font-size: 1.05rem;
 }
 
 .hero-tags {
@@ -70,43 +63,57 @@ nav a:hover {
 .hero-tags span {
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
-  padding: 0.4rem 1rem;
-  margin: 0.25rem;
+  padding: 6px 14px;
+  margin: 6px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.divider {
-  border: 0;
-  height: 1px;
-  background: #ddd;
-  margin: 2rem 0;
-}
-
+/* ===== Section Wrapper ===== */
 .case-section {
   padding: 4rem 1rem;
 }
 
-.case-section.alt-bg {
-  background-color: #fafafa;
+.container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+/* Divider */
+.divider {
+  border: none;
+  height: 1px;
+  background: #e6e6e6;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+/* Headings */
 .case-section h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.case-section p {
-  margin-bottom: 1rem;
-  font-size: clamp(0.9rem, 2vw, 1.05rem);
+.case-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
 }
 
+/* Highlight Boxes */
 .highlight-box {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  padding: 2rem;
-  margin: 2rem 0;
+  background: white;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  margin: 1.5rem 0;
+  transition: transform 0.2s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-4px);
 }
 
 .highlight-box ul {
@@ -127,60 +134,55 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* Solution Cards Layout */
 .solution-cards-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .solution-card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 2rem;
-  margin: 1rem 0;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  flex: 1 1 300px;
-  max-width: 450px;
+  background: white;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
   text-align: left;
 }
 
+.solution-card:hover {
+  transform: translateY(-4px);
+}
+
 .solution-card h3 {
-  margin-bottom: 1rem;
   color: #007BFF;
+  margin-bottom: 0.8rem;
 }
 
 .solution-card p {
-  font-size: 1rem;
   color: #555;
+  font-size: 1rem;
 }
 
+/* Figma CTA */
 .figma-cta {
-  background: #007BFF;
-  color: #fff;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-}
-
-.figma-cta h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  margin-bottom: 1rem;
-}
-
-.figma-cta p {
-  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 .prototype-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: black;
+  color: white;
   text-decoration: none;
-  color: #007BFF;
-  background: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: background 0.3s, color 0.3s;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
 
 .prototype-btn:hover {
-  background: #e6e6e6;
+  background: #333;
+  transform: translateY(-2px);
 }
