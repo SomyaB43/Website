@@ -1,0 +1,144 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f7f7f7;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+/* ===== Navigation ===== */
+nav {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* ===== HERO SECTION ===== */
+.case-hero {
+  text-align: center;
+  padding: 5rem 1rem 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.case-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.case-hero p {
+  max-width: 650px;
+  margin: 0 auto 1.8rem auto;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* Tags */
+.hero-tags span {
+  display: inline-block;
+  background: white;
+  padding: 6px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid #e4e4e4;
+}
+
+/* ===== Section Wrapper ===== */
+.case-section {
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Alternating background */
+.alt-bg {
+  background: white;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  height: 1px;
+  background: #e6e6e6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ===== Headings ===== */
+.case-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.case-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+/* ===== Cards ===== */
+.highlight-box,
+.solution-card {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+  margin-bottom: 1.8rem;
+}
+
+.highlight-box:hover,
+.solution-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ===== Text Styling ===== */
+.case-section p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* ===== Figma CTA ===== */
+.figma-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.prototype-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.prototype-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
