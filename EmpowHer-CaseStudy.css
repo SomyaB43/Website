@@ -193,6 +193,8 @@ nav a:hover {
 
 .highlight-images video{
   width:100%;
+  display: block;
+  margin: 0 auto; 
   max-width:350px;
   border-radius:12px;
   box-shadow:0 6px 16px rgba(0,0,0,0.08);
@@ -219,6 +221,7 @@ nav a:hover {
   background:#333;
   transform:translateY(-2px);
 }
+
 
 
 
