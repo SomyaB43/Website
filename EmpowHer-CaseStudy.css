@@ -181,7 +181,7 @@ nav a:hover {
   display: block;
   margin: 0 auto; 
   width:100%;
-  max-width:300px;
+  max-width:350px;
   border-radius:12px;
   box-shadow:0 6px 16px rgba(0,0,0,0.08);
   transition:0.3s ease;
@@ -219,6 +219,7 @@ nav a:hover {
   background:#333;
   transform:translateY(-2px);
 }
+
 
 
 
