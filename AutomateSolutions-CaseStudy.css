@@ -7,8 +7,8 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #f7f7f7;
-  color: #1a1a1a;
+  background: #0d0d0d; /* dark techy background */
+  color: #e0e0e0; /* light text for contrast */
   line-height: 1.7;
 }
 
@@ -21,14 +21,15 @@ nav {
 nav a {
   margin: 0 20px;
   text-decoration: none;
-  color: #333;
+  color: #00ffe1; /* neon cyan */
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
-  color: black;
+  color: #ff00ff; /* neon magenta hover */
 }
 
 /* ===== HERO SECTION ===== */
@@ -43,24 +44,33 @@ nav a:hover {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #00ffe1; /* neon cyan heading */
+  text-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
 }
 
 .case-hero p {
   max-width: 650px;
   margin: 0 auto 1.8rem auto;
-  color: #555;
+  color: #a0a0a0; /* softer light gray for readability */
   font-size: 1.05rem;
 }
 
 /* Tags */
 .hero-tags span {
   display: inline-block;
-  background: white;
+  background: #1a1a1a; /* dark tag background */
+  color: #00ffe1; /* neon cyan text */
   padding: 6px 14px;
   margin: 6px;
   border-radius: 20px;
   font-size: 0.8rem;
-  border: 1px solid #e4e4e4;
+  border: 1px solid #00ffe1;
+  transition: 0.3s ease;
+}
+
+.hero-tags span:hover {
+  background: #00ffe1;
+  color: #0d0d0d;
 }
 
 /* ===== Section Wrapper ===== */
@@ -76,48 +86,52 @@ nav a:hover {
 
 /* Alternating background */
 .alt-bg {
-  background: white;
+  background: #111111; /* slightly lighter than main bg */
 }
 
 /* Divider */
 .divider {
   border: none;
   height: 1px;
-  background: #e6e6e6;
+  background: #00ffe1; /* neon cyan line */
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 /* ===== Headings ===== */
 .case-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
+  color: #00ffe1;
+  text-shadow: 0 0 6px #00ffe1;
 }
 
 .case-section h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
+  color: #ff00ff; /* neon magenta for subheadings */
 }
 
 /* ===== Cards ===== */
 .highlight-box,
 .solution-card {
-  background: white;
+  background: #1a1a1a; /* dark card */
   padding: 1.8rem;
   border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-  transition: transform 0.2s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 225, 0.3); /* neon cyan glow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: 1.8rem;
 }
 
 .highlight-box:hover,
 .solution-card:hover {
   transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(0, 255, 225, 0.6), 0 0 10px rgba(255, 0, 255, 0.4);
 }
 
 /* ===== Text Styling ===== */
 .case-section p {
-  color: #555;
+  color: #c0c0c0;
   margin-bottom: 1rem;
 }
 
@@ -130,16 +144,17 @@ nav a:hover {
 .prototype-btn {
   display: inline-block;
   padding: 12px 22px;
-  background: black;
-  color: white;
+  background: #00ffe1;
+  color: #0d0d0d;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 500;
-  transition: 0.3s ease;
+  transition: 0.3s ease, transform 0.2s ease;
 }
 
 .prototype-btn:hover {
-  background: #333;
+  background: #ff00ff;
+  color: #0d0d0d;
   transform: translateY(-2px);
 }
 
@@ -150,22 +165,26 @@ nav a:hover {
   gap: 1.8rem;
   margin-top: 2rem;
 }
+
 /* Solution Card Styling */
 .case-section .solution-card {
-  background: white;
+  background: #1a1a1a;
   padding: 1.8rem;
   border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-  transition: transform 0.2s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 225, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
 }
 
 .case-section .solution-card:hover {
   transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(0, 255, 225, 0.6), 0 0 10px rgba(255, 0, 255, 0.4);
 }
 
 .case-section .solution-card h3 {
   font-size: 1.05rem;
   margin: 0;
   font-weight: 500;
+  color: #00ffe1;
+  text-shadow: 0 0 4px #00ffe1;
 }
