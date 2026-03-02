@@ -7,8 +7,8 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #0d0d0d; /* dark techy background */
-  color: #e0e0e0; /* light text for contrast */
+  background: #f0f4f8; /* light neutral background */
+  color: #1a1a1a;
   line-height: 1.7;
 }
 
@@ -21,7 +21,7 @@ nav {
 nav a {
   margin: 0 20px;
   text-decoration: none;
-  color: #00ffe1; /* neon cyan */
+  color: #2b6cb0; /* soft techy blue */
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ff00ff; /* neon magenta hover */
+  color: #1a4a7a; /* darker blue on hover */
 }
 
 /* ===== HERO SECTION ===== */
@@ -44,33 +44,31 @@ nav a:hover {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #00ffe1; /* neon cyan heading */
-  text-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
+  color: #2b6cb0;
 }
 
 .case-hero p {
   max-width: 650px;
   margin: 0 auto 1.8rem auto;
-  color: #a0a0a0; /* softer light gray for readability */
+  color: #555;
   font-size: 1.05rem;
 }
 
 /* Tags */
 .hero-tags span {
   display: inline-block;
-  background: #1a1a1a; /* dark tag background */
-  color: #00ffe1; /* neon cyan text */
+  background: #e1efff; /* light blue bubble */
+  color: #2b6cb0;
   padding: 6px 14px;
   margin: 6px;
   border-radius: 20px;
   font-size: 0.8rem;
-  border: 1px solid #00ffe1;
+  border: 1px solid #c3ddf5;
   transition: 0.3s ease;
 }
 
 .hero-tags span:hover {
-  background: #00ffe1;
-  color: #0d0d0d;
+  background: #c3ddf5;
 }
 
 /* ===== Section Wrapper ===== */
@@ -86,14 +84,14 @@ nav a:hover {
 
 /* Alternating background */
 .alt-bg {
-  background: #111111; /* slightly lighter than main bg */
+  background: #ffffff; /* clean white section */
 }
 
 /* Divider */
 .divider {
   border: none;
   height: 1px;
-  background: #00ffe1; /* neon cyan line */
+  background: #d1dbe5;
   max-width: 900px;
   margin: 2rem auto;
 }
@@ -102,36 +100,35 @@ nav a:hover {
 .case-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  color: #00ffe1;
-  text-shadow: 0 0 6px #00ffe1;
+  color: #2b6cb0;
 }
 
 .case-section h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
-  color: #ff00ff; /* neon magenta for subheadings */
+  color: #1a4a7a;
 }
 
 /* ===== Cards ===== */
 .highlight-box,
 .solution-card {
-  background: #1a1a1a; /* dark card */
+  background: #ffffff;
   padding: 1.8rem;
   border-radius: 14px;
-  box-shadow: 0 0 20px rgba(0, 255, 225, 0.3); /* neon cyan glow */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: 1.8rem;
 }
 
 .highlight-box:hover,
 .solution-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 30px rgba(0, 255, 225, 0.6), 0 0 10px rgba(255, 0, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* ===== Text Styling ===== */
 .case-section p {
-  color: #c0c0c0;
+  color: #555;
   margin-bottom: 1rem;
 }
 
@@ -144,8 +141,8 @@ nav a:hover {
 .prototype-btn {
   display: inline-block;
   padding: 12px 22px;
-  background: #00ffe1;
-  color: #0d0d0d;
+  background: #2b6cb0;
+  color: white;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 500;
@@ -153,8 +150,7 @@ nav a:hover {
 }
 
 .prototype-btn:hover {
-  background: #ff00ff;
-  color: #0d0d0d;
+  background: #1a4a7a;
   transform: translateY(-2px);
 }
 
@@ -168,23 +164,22 @@ nav a:hover {
 
 /* Solution Card Styling */
 .case-section .solution-card {
-  background: #1a1a1a;
+  background: #ffffff;
   padding: 1.8rem;
   border-radius: 14px;
-  box-shadow: 0 0 20px rgba(0, 255, 225, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
 }
 
 .case-section .solution-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 30px rgba(0, 255, 225, 0.6), 0 0 10px rgba(255, 0, 255, 0.4);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .case-section .solution-card h3 {
   font-size: 1.05rem;
   margin: 0;
   font-weight: 500;
-  color: #00ffe1;
-  text-shadow: 0 0 4px #00ffe1;
+  color: #2b6cb0;
 }
