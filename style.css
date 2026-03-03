@@ -7,7 +7,7 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #faf8ff; /* soft white with lilac tint */
+  background: #f0f4f8; /* light neutral background */
   color: #1a1a1a;
   line-height: 1.7;
 }
@@ -21,7 +21,7 @@ nav {
 nav a {
   margin: 0 20px;
   text-decoration: none;
-  color: #7c5ac9; /* soft lilac */
+  color: #2b6cb0; /* soft techy blue */
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #5a3ea0; /* darker lilac hover */
+  color: #1a4a7a; /* darker blue on hover */
 }
 
 /* ===== HERO SECTION ===== */
@@ -44,7 +44,7 @@ nav a:hover {
   font-size: 2.6rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #7c5ac9; /* lilac heading */
+  color: #2b6cb0;
 }
 
 .case-hero p {
@@ -57,18 +57,18 @@ nav a:hover {
 /* Tags */
 .hero-tags span {
   display: inline-block;
-  background: #f3edff; /* light lilac bubble */
-  color: #7c5ac9;
+  background: #e1efff; /* light blue bubble */
+  color: #2b6cb0;
   padding: 6px 14px;
   margin: 6px;
   border-radius: 20px;
   font-size: 0.8rem;
-  border: 1px solid #d4c6f2;
+  border: 1px solid #c3ddf5;
   transition: 0.3s ease;
 }
 
 .hero-tags span:hover {
-  background: #e1d7ff; /* slightly darker lilac */
+  background: #c3ddf5;
 }
 
 /* ===== Section Wrapper ===== */
@@ -91,7 +91,7 @@ nav a:hover {
 .divider {
   border: none;
   height: 1px;
-  background: #dcd6e8; /* soft lilac divider */
+  background: #d1dbe5;
   max-width: 900px;
   margin: 2rem auto;
 }
@@ -100,22 +100,22 @@ nav a:hover {
 .case-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  color: #7c5ac9;
+  color: #2b6cb0;
 }
 
 .case-section h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
-  color: #5a3ea0;
+  color: #1a4a7a;
 }
 
 /* ===== Cards ===== */
 .highlight-box,
 .solution-card {
-  background: #ffffff; /* white cards */
+  background: #ffffff;
   padding: 1.8rem;
   border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(124, 90, 201, 0.08); /* soft lilac shadow */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: 1.8rem;
 }
@@ -123,7 +123,7 @@ nav a:hover {
 .highlight-box:hover,
 .solution-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(124, 90, 201, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 /* ===== Text Styling ===== */
@@ -141,7 +141,7 @@ nav a:hover {
 .prototype-btn {
   display: inline-block;
   padding: 12px 22px;
-  background: #7c5ac9; /* lilac button */
+  background: #2b6cb0;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -150,7 +150,7 @@ nav a:hover {
 }
 
 .prototype-btn:hover {
-  background: #5a3ea0; /* darker lilac hover */
+  background: #1a4a7a;
   transform: translateY(-2px);
 }
 
@@ -167,19 +167,19 @@ nav a:hover {
   background: #ffffff;
   padding: 1.8rem;
   border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(124, 90, 201, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
 }
 
 .case-section .solution-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(124, 90, 201, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .case-section .solution-card h3 {
   font-size: 1.05rem;
   margin: 0;
   font-weight: 500;
-  color: #7c5ac9;
+  color: #2b6cb0;
 }
