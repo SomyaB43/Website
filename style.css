@@ -7,8 +7,8 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #f0f4f8; /* light neutral background */
-  color: #1a1a1a;
+  background: #f8f5ff; /* very light lilac */
+  color: #2e1f3f; /* deep soft purple text */
   line-height: 1.7;
 }
 
@@ -21,7 +21,7 @@ nav {
 nav a {
   margin: 0 20px;
   text-decoration: none;
-  color: #2b6cb0; /* soft techy blue */
+  color: #7b4bb7; /* medium lilac */
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -29,11 +29,10 @@ nav a {
 }
 
 nav a:hover {
-  color: #1a4a7a; /* darker blue on hover */
+  color: #4b2e83; /* dark purple */
 }
 
 /* ===== HERO SECTION ===== */
-/* ===== HERO SECTION (Homepage) ===== */
 .hero {
   position: relative;
   height: 100vh;
@@ -42,20 +41,20 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #e6f0ff, #f0f4f8);
+  background: linear-gradient(135deg, #f3edff, #ffffff);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(75, 46, 131, 0.15); /* soft purple overlay */
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 750px;
-  color: #1a1a1a;
+  color: #2e1f3f;
 }
 
 .hero h1 {
@@ -65,18 +64,18 @@ nav a:hover {
 }
 
 .hero h1 span {
-  color: #2b6cb0;
+  color: #7b4bb7;
 }
 
 .subtitle {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #4b2e83;
 }
 
 .description {
   font-size: 1.05rem;
-  color: #555;
+  color: #5a3d75;
   margin-bottom: 2rem;
 }
 
@@ -90,7 +89,7 @@ nav a:hover {
 
 .btn {
   padding: 12px 24px;
-  background: #2b6cb0;
+  background: #7b4bb7;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -99,36 +98,36 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: #1a4a7a;
+  background: #4b2e83;
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
-  border: 2px solid #2b6cb0;
-  color: #2b6cb0;
+  border: 2px solid #7b4bb7;
+  color: #7b4bb7;
 }
 
 .btn-secondary:hover {
-  background: #2b6cb0;
+  background: #7b4bb7;
   color: white;
 }
 
 /* Tags */
 .hero-tags span {
   display: inline-block;
-  background: #e1efff; /* light blue bubble */
-  color: #2b6cb0;
+  background: #efe8ff; /* pale lilac bubble */
+  color: #6a3fa0;
   padding: 6px 14px;
   margin: 6px;
   border-radius: 20px;
   font-size: 0.8rem;
-  border: 1px solid #c3ddf5;
+  border: 1px solid #d9ccff;
   transition: 0.3s ease;
 }
 
 .hero-tags span:hover {
-  background: #c3ddf5;
+  background: #d9ccff;
 }
 
 /* ===== Section Wrapper ===== */
@@ -144,14 +143,14 @@ nav a:hover {
 
 /* Alternating background */
 .alt-bg {
-  background: #ffffff; /* clean white section */
+  background: #ffffff;
 }
 
 /* Divider */
 .divider {
   border: none;
   height: 1px;
-  background: #d1dbe5;
+  background: #e2d8ff;
   max-width: 900px;
   margin: 2rem auto;
 }
@@ -160,13 +159,13 @@ nav a:hover {
 .case-section h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  color: #2b6cb0;
+  color: #4b2e83;
 }
 
 .case-section h3 {
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
-  color: #1a4a7a;
+  color: #6a3fa0;
 }
 
 /* ===== Cards ===== */
@@ -175,7 +174,7 @@ nav a:hover {
   background: #ffffff;
   padding: 1.8rem;
   border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(75, 46, 131, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: 1.8rem;
 }
@@ -183,12 +182,12 @@ nav a:hover {
 .highlight-box:hover,
 .solution-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 24px rgba(75, 46, 131, 0.15);
 }
 
 /* ===== Text Styling ===== */
 .case-section p {
-  color: #555;
+  color: #5a3d75;
   margin-bottom: 1rem;
 }
 
@@ -201,7 +200,7 @@ nav a:hover {
 .prototype-btn {
   display: inline-block;
   padding: 12px 22px;
-  background: #2b6cb0;
+  background: #7b4bb7;
   color: white;
   text-decoration: none;
   border-radius: 8px;
@@ -210,11 +209,11 @@ nav a:hover {
 }
 
 .prototype-btn:hover {
-  background: #1a4a7a;
+  background: #4b2e83;
   transform: translateY(-2px);
 }
 
-/* ===== Solution Cards Layout for Goals, Problem, UX Approach ===== */
+/* ===== Solution Cards Layout ===== */
 .case-section .solution-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -222,24 +221,13 @@ nav a:hover {
   margin-top: 2rem;
 }
 
-/* Solution Card Styling */
 .case-section .solution-card {
-  background: #ffffff;
-  padding: 1.8rem;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
-}
-
-.case-section .solution-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .case-section .solution-card h3 {
   font-size: 1.05rem;
   margin: 0;
   font-weight: 500;
-  color: #2b6cb0;
+  color: #4b2e83;
 }
