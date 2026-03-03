@@ -80,32 +80,26 @@ nav a:hover {
 }
 
 /* Buttons */
-.btn-group {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 .btn {
   padding: 12px 24px;
   background: #7b4bb7;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 16px; /* more rounded */
   font-weight: 500;
   transition: 0.3s ease;
-}
-
-.btn:hover {
-  background: #4b2e83;
-  transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
   border: 2px solid #7b4bb7;
   color: #7b4bb7;
+  border-radius: 16px; /* match primary button */
+}
+
+.btn:hover {
+  background: #4b2e83;
+  transform: translateY(-2px);
 }
 
 .btn-secondary:hover {
