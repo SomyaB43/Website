@@ -85,7 +85,7 @@ nav a:hover {
   background: #7b4bb7;
   color: white;
   text-decoration: none;
-  border-radius: 16px; /* more rounded */
+  border-radius: 999px; /* more rounded */
   font-weight: 500;
   transition: 0.3s ease;
 }
