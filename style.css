@@ -34,49 +34,65 @@ nav a:hover {
 
 /* ===== HERO SECTION ===== */
 .hero {
-  position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f3edff, #ffffff);
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(75, 46, 131, 0.15); /* soft purple overlay */
+  padding: 0 10%;
+  background: #f8f5ff;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 750px;
-  color: #2e1f3f;
+  max-width: 650px;
+}
+
+.intro-tag {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #7b4bb7;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.hero h1 span {
-  color: #7b4bb7;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #2e1f3f;
+  margin-bottom: 1.5rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #4b2e83;
-}
-
-.description {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #5a3d75;
   margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 14px 28px;
+  background: #7b4bb7;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #4b2e83;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1.5px solid #7b4bb7;
+  color: #7b4bb7;
 }
 
 /* Buttons */
